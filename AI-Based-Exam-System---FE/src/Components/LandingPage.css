@@ -1,0 +1,34 @@
+.landing-page h1 {
+    line-height: 1.2;
+    color: #000;
+}
+
+.landing-page .lead {
+    color: #333;
+}
+
+.landing-page .btn-warning {
+    color: #000;
+}
+
+.bg-primary {
+    background-color: #2E1CF6 !important;
+}
+
+.text-warning {
+    color: #FFD500 !important;
+}
+
+.rounded-pill {
+    border-radius: 50px !important;
+}
+
+.container .btn-primary {
+    background-color: #2E1CF6;
+    color: #FFF;
+    font-size: 1.25rem;
+}
+
+.btn-primary:hover {
+    background-color: #2018C6;
+}

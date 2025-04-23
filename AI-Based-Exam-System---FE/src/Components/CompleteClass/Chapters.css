@@ -1,0 +1,132 @@
+/* Overall container for left and right alignment */
+.chapters-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 3rem;
+    background-color: #f5f6fa;
+    box-sizing: border-box;
+}
+
+/* Left section styling */
+.left-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #2E1CF6;
+    font-weight: 800;
+}
+
+/* Grid for chapter buttons */
+.chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-items: center; /* Center items in the grid */
+}
+
+.chapter-btn {
+    background-color: #2E1CF6;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px; /* Increased roundness */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 100%; /* Make buttons uniform width */
+    max-width: 200px;
+    text-align: center;
+}
+
+.chapter-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Right section styling for Choose Subject button */
+.right-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.choose-btn {
+    background-color: #FFD500;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.choose-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chapters-page {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .chapter-btn {
+        font-size: 1.25rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .choose-btn {
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.75rem;
+    }
+
+    .chapter-btn, .choose-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+.chapter-btn.selected {
+    background-color: #1a73e8; /* Change to a different color when selected */
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}

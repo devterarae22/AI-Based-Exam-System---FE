@@ -1,0 +1,31 @@
+/* Styling for the navbar to match the provided design */
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}

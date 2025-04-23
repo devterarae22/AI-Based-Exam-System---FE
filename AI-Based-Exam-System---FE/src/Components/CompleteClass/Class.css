@@ -1,0 +1,87 @@
+/* Heading styling */
+.class-page h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 2rem;
+}
+
+.class-page h3::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #2E1CF6;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* Container styling */
+.class-page {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    /* min-height: 100vh; Centers vertically */
+}
+
+/* Card styling for each class */
+.class-card {
+    width: 170px; /* Set to 250px as requested */
+    height: 170px; /* Set to 250px as requested */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    margin: 10px; /* Space between cards */
+}
+
+.class-card:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+}
+
+/* Button styling inside the card */
+.class-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 2.5rem; /* Increased for larger cards */
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2E1CF6;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.class-btn:hover {
+    background-color: #2417C4;
+    transform: scale(1.05);
+}
+
+.class-btn:focus {
+    outline: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .class-card {
+        width: 200px;
+        height: 200px;
+    }
+    .class-btn {
+        font-size: 2rem;
+    }
+}
